@@ -1,0 +1,395 @@
+@font-face {
+  src: url(dd.ttf);
+  font-family: "maddy"
+}
+
+@font-face {
+  src: url(mk.ttf);
+  font-family: "madhu"
+}
+
+@font-face {
+  src: url(monster.ttf);
+  font-family: "monster"
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: 'Lato', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  background-image: url('cover.png');
+  background-size: cover;
+  background-position: cover;
+  background-attachment: fixed;
+}
+
+body::-webkit-scrollbar{
+  width: 5px;
+  color: aquamarine;
+}
+
+body::-webkit-scrollbar-button{
+  background-color: peachpuff;
+}
+
+body::-webkit-scrollbar-thumb{
+  background-image: linear-gradient(0deg,#28B78D,peachpuff);
+}
+
+section{
+  overflow-x: hidden;
+}
+
+button{
+  display: inline-block;
+  margin-top: 2em;
+  font-family: monster;
+  font-size: 20px;
+  color: black;
+  background: #28B78D;
+  color: white;
+  padding: 1em;
+  width: 50%;
+  min-width: 8em;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+
+.blue{
+  padding: 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  min-height: 75vh;
+  width: 100%;
+  color: antiquewhite;
+  background-color: #0E9f9E;
+  margin-bottom: 2em;
+  position: relative;
+}
+
+.cont{
+  position: relative;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.cont h1{
+  padding-top: 1em;
+  font-family: maddy;
+  font-size: 80px;
+  font-weight: lighter;
+}
+
+.cont h2{
+  font-family: madhu;
+  font-weight: lighter;
+  font-size: 40px;
+}
+
+
+.blue > .image{
+  width: 40%;
+}
+
+.image > img{
+  width: 100%;
+}
+
+.second,.third{
+  padding-top: 5em;
+  text-align: center;
+}
+
+.bgi{
+  background-image: url('bbb.jpg');
+  padding: 2em 1em;
+}
+
+.second > .bgi > h1,.third > .bgi > h1{
+  color: ghostwhite;
+  font-family: monster;
+  font-weight: normal;
+  font-size: 50px;
+}
+
+.second > .bgi > p,.third > .bgi > p{
+  font-size: 30px;
+  font-family: monster;
+  color: ghostwhite;
+}
+
+.bcontainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+}
+
+.box,.fcontainer{
+  margin: 2em;
+  box-shadow: 10px 5px 5px dimgrey;
+  width: 15%;
+  padding: 3em;
+  background-color: #28B78D;
+  color: white;
+}
+
+.box li{
+  font-size: 18px;
+}
+
+.box h2{
+  font-family: monster;
+  font-weight: normal;
+}
+
+ul,ol{
+  margin: 0;
+  padding: 0;
+}
+
+ol{
+  padding-top: 3em;
+}
+
+.third{
+  padding: 5em 0 1em 0;
+}
+
+.nest{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.nest .ic{
+  width: 20%;
+  margin: 10em 1em;
+  /* max-height: 650px; */
+}
+
+.dummyimage{
+  display: block;
+  height: 100%;
+  width: 100%;
+  background-color: grey;
+  position: relative;
+}
+.dummyimage h2{
+  display: block;
+  top: 50%;
+  left: 50%;
+  color: antiquewhite;
+  transform: translate(-50%,-50%);
+  position: absolute;
+}
+
+.fcc{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.fcontainer{
+  width: 15%;
+}
+
+.fcontainer > h3{
+  font-family: madhu;
+  font-weight: lighter;
+  font-size: 35px;
+}
+
+
+.footer-social-icons h2{
+  color: #8B14FC;
+  text-align: center;
+}
+
+h1,h2,h3,h4,h5,h6{
+  margin:  1% 0 1% 0;
+}
+
+footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-bottom: 2em;
+}
+
+footer.div{
+  width: 40%;
+}
+
+.maps{
+  /* float: left; */
+  width: 40%;
+  margin: 0;
+  padding: 0;
+  /* box-sizing: content-box; */
+  border: 2px solid #DE2A6F;
+}
+
+.maddy{
+  border: 2px solid #DE2A6F;
+  width: 40%;
+  background-image: url('bgg.jpg');
+  background-size: cover;
+  position: relative;
+}
+
+  .footer-social-icons {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    display:block;
+  }
+
+.social-icon {
+  color: #fff;
+}
+ul.social-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 10px;
+}
+.social-icons li {
+  vertical-align: top;
+  display: inline;
+  height: 200px;
+}
+.social-icons a {
+  color: #fff;
+  text-decoration: none;
+}
+.fa-facebook {
+  padding:10px 14px;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition: .5s;
+  background-color: #322f30;
+}
+.fa-facebook:hover {
+  background-color: #3d5b99;
+}
+.fa-twitter {
+  padding:10px 12px;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition: .5s;
+  background-color: #322f30;
+}
+.fa-twitter:hover {
+  background-color: #00aced;
+}
+.fa-rss {
+  padding:10px 14px;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition: .5s;
+  background-color: #322f30;
+}
+.fa-rss:hover {
+  background-color: #eb8231;
+}
+.fa-youtube {
+  padding:10px 14px;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition: .5s;
+  background-color: #322f30;
+}
+.fa-youtube:hover {
+  background-color: #e64a41;
+}
+.fa-linkedin {
+  padding:10px 14px;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition: .5s;
+  background-color: #322f30;
+}
+.fa-linkedin:hover {
+  background-color: #0073a4;
+}
+.fa-google-plus {
+  padding:10px 9px;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition: .5s;
+  background-color: #322f30;
+}
+.fa-google-plus:hover {
+  background-color: #e25714;
+}
+
+span{
+  color: #EA4335;
+  text-align: center;
+}
+
+@media screen and ( max-width: 700px) {
+  .blue {
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .cont h1{
+    padding-top: 0;
+    position: relative;
+  }
+
+  .footer-social-icons{
+    transform: translateY(0);
+  }
+
+.nest,.fcontainer,.bcontainer{
+  position: relative;
+  box-sizing: content-box;
+  flex-direction: column;
+  }
+
+.fcc{
+  width: 100%;
+}
+
+.box,.fcontainer{
+  width: auto;
+}
+
+footer{
+  flex-direction: column;
+}
+
+footer .maps, footer .maddy{
+  position: relative;
+  width: 80%;
+  margin: 1em auto;
+}
+
+}
