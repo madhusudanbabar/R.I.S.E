@@ -6,6 +6,16 @@
     font-family: monster;
     font-size: 2em;
 }
+
+.lll{
+    color : #28B78D;
+    transition : .5s ease all;
+}
+
+.lll:hover{
+    color: tomato;
+}
+
 @font-face {
   src: url(vast_shadow.ttf);
   font-family: "maddy"
