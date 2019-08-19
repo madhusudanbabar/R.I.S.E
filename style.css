@@ -1,3 +1,11 @@
+.scroll {
+    color: white;
+    background-color: #0E9f9E;
+    padding: 0.5em;
+    margin: 0;
+    font-family: monster;
+    font-size: 2em;
+}
 @font-face {
   src: url(vast_shadow.ttf);
   font-family: "maddy"
